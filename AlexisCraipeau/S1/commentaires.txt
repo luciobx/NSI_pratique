@@ -1,0 +1,3 @@
+Exercice niveau première.
+La difficulté peut être légèrement augmentée en demandant d'afficher
+les opérations intermédiaires.
