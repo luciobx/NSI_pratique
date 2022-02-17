@@ -25,7 +25,7 @@ donnees_animaux = [['chat', 23, 3.5],
 
 Si l'on dispose de ces caractéristiques pour un nouvel animal dont l'espèce n'est pas connue, on veut savoir quelles sont les espèces des animaux du jeu de données `donnees_animaux` ayant les caractéristiques les plus proches de cet animal.
 
-Pour estimer si deux animaux $a_{1}$ et $a_{2}$ ayant les caractéristiques respectives $m_{1}$, $t_{1}$ et $m_{2}$, $t_{2}$ sont "proches", on utilise la formule suivante calculant leur distance $d$ : $d = \sqrt{ (t_{1}-t_{2})^2 + (m_{1}-m_{2})^2 }$
+Pour estimer si deux animaux $'a_{1}'$ et $a_{2}$ ayant les caractéristiques respectives $m_{1}$, $t_{1}$ et $m_{2}$, $t_{2}$ sont "proches", on utilise la formule suivante calculant leur distance $d$ : $d = \sqrt{ (t_{1}-t_{2})^2 + (m_{1}-m_{2})^2 }$
 
 Chacun des animaux de la liste `donnees_animaux` correspond à une donnée dont on veut calculer la distance par rapport à une nouvelle donnée : notre animal mystère.
 
