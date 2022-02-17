@@ -1,0 +1,4 @@
+cet exercice est déclinable en changeant le type d'implémentation d'arbre binaire
+(liste, liste de listes ou tuples, dictionnaires )
+
+
