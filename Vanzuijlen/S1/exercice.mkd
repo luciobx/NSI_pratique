@@ -9,7 +9,7 @@ On implémente cet arbre avec la classe **Noeud**
 ```python
 class Noeud:
 
-    def __init__(self, valeur = None, gauche = None, droite = None):
+    def __init__(self, valeur=None, gauche=None, droite=None):
         self.valeur = valeur
         self.gauche = gauche
         self.droite = droite
@@ -20,6 +20,8 @@ class Noeud:
         else:
             return False
 ```
+Un arbre vide se déclare par : ``` arbre_vide = None ```
+
 La représentation de notre arbre est donc :
 
 ```python
@@ -36,11 +38,11 @@ La fonction suivante permet de déterminer la somme maximale que l'on peut réal
 Dans notre cas il s'agit de : 12 + 7 + 40 = 59
 
 ```python
-def somme_maxi(arbre):
+def poids_maxi_branche(arbre):
     if arbre.estFeuille():
         return arbre.valeur
     else:
-        return arbre.valeur + max(somme_maxi(arbre.gauche),somme_maxi(arbre.droite))
+        return arbre.valeur + max(poids_maxi_branche(arbre.gauche),poids_maxi_branche(arbre.droite))
 ```
 Cependant, si l'arbre n'est pas complet, cette fonction produit une erreur.
 
