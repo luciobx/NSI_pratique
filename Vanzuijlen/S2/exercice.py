@@ -1,0 +1,26 @@
+def compte_points(p):
+    if .....:
+        return 0
+    else:
+        couleur_papier1 = ....
+        couleur_papier2 = ....
+        couleur_papier3 = ....
+        if .........:
+            if couleur_papier1 == ...:
+                return ......
+            if ......:
+                return ......
+            if ......:
+                return ......
+        else:
+            ......
+            ......
+            return compte_points(p)
+            
+assert compte_points(['V','V','R','R','R','O','V','V','V','O','O','O','V','V','V','R','R','R','R','R','O','V','V']) == 3
+assert compte_points(['O','O','O','V','V','V','R','R','R']) == 2
+assert compte_points(['V','V','O','O','R','R']) == 0
+assert compte_points(['V','V','V','R','V','R','V','V','V']) == 4
+assert compte_points([]) == 0
+assert compte_points(['V','V']) == 0
+assert compte_points(['V','R','R','R','V','R','R','R']) == -2
