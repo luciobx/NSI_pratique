@@ -1,0 +1,26 @@
+# Exercice - Pile - Récursivité
+
+Dans sa classe un professeur décide d'évaluer le travail donné à ses élèves à la maison de la manière suivante:
+
+Chaque jour, pour chaque élève il place dans une boite,
+
+* un papier vert si le travail a été fait et réussi.
+* un papier orange si le travail a été fait mais pas réussi
+* un papier rouge si le travail n'a pas été fait
+
+Pour compter les points de bonus qu'il attribuera à l'élève à la fin du trimestre, il procède comme suit:
+
+* Il retire les trois premiers papiers.
+    * S'ils sont de la même couleur, il ajoute 2 points pour du vert, 1 point pour du orange et retire 1 point pour du rouge et écarte les trois papiers.
+    * S'ils ne sont pas de la même couleur, il écarte le premier papier et remet les deux autres dans la boite (dans le même ordre).
+* Et recommence le processus, et ce tant qu'il reste 3 papiers à retirer.
+
+On modélise la boîte d'un élève par une pile.
+
+Pour représenter une pile on utilisera une liste.
+
+Les couleurs des papiers sont représentés par les caractères ``` 'V' ``` , ``` 'O' ```  et ``` 'R' ```
+
+**Pour rappel :** ```liste.append(el)``` permet d'empiler *el* au sommet de la pile et ```v = liste.pop(-1)``` permet de dépiler le sommet de la pile dans la variable v.
+
+Vous devez compléter la fonction récursive ```compte_points(p)``` prenant en paramètre une pile de papier d'un élève et renvoyant le nombre de points bonus obtenus.
