@@ -1,0 +1,5 @@
+On peut utiliser une autre implémentation de la structure pile.
+
+On peut laisser l'élève écrire seul le programme, une version itérative ou récursive, plutôt que du code à compléter.
+
+On peut compliquer l'affaire en exigeant de remettre la pile en son état d'origine après traitement.
